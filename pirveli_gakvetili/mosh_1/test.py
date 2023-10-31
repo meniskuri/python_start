@@ -1,13 +1,6 @@
-print("hallo mosh")
-print("me var giorgi")
-
-print("me var konverteri")
-
-
-gela = int(input("ramdeni lari gaqvs?:  "))
-
-kursi = 3
-
-
-
-print(f"shen gaqvs {gela/kursi} dolari")
+a = True  # ლოგიკური მნიშვნელობის მქონე ცვლადი
+b = not a  # ლოგიკური მნიშვნელობის მქონე ცვლადი
+print(a, b)  # შედეგის გამოტანა ეკრანზე
+c = a and b  # ლოგიკური მნიშვნელობის მქონე ცვლადი გამოთვლით
+d = a or b  # ლოგიკური მნიშვნელობის მქონე ცვლადი გამოთვლით
+print(c, d)  # შედეგის გამოტანა ეკრანზე

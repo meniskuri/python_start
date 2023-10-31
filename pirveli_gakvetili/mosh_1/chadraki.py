@@ -21,21 +21,29 @@ squareSecondcolour = "" # second square colour
 while True:
 
     X1 = input("Enter X1 coordinate (if break type: exit): ") # X coord (1-A 2-B 3-C 4-D 5-E 6-F 7-G 8-H)
+    print("id(X1) ",id(X1))
+    print("type(X1) = ",type(X1))
     if X1 == "exit":
         print("amovagde while idan")
         break
 
     Y1 = input("Enter Y1 coordinate (if break type: exit): ") # Y coord (1 2 3 4 5 6 7 8)
+    print("id(Y1) ",id(Y1))
+    print("type(Y1) = ",type(Y1))
     if Y1 == "exit":
         print("amovagde while idan")
         break
 
     X2 = input("Enter X2 coordinate (if break type: exit): ")
+    print("id(X2) ",id(X2))
+    print("type(X2) = ",type(X2))
     if X2 == "exit":
         print("amovagde while idan")
         break
 
     Y2 = input("Enter Y2 coordinate (if break type: exit): ")
+    print("id(Y2) ",id(Y2))
+    print("type(Y2) = ",type(Y2))
     if X1 == "exit" or X2 == "exit" or Y1 == "exit" or Y2 == "exit":
         print("amovagde while idan")
         break
