@@ -21,15 +21,25 @@ squareSecondcolour = "" # second square colour
 while True:
 
     X1 = input("Enter X1 coordinate (if break type: exit): ") # X coord (1-A 2-B 3-C 4-D 5-E 6-F 7-G 8-H)
+    if X1 == "exit":
+        print("amovagde while idan")
+        break
+
     Y1 = input("Enter Y1 coordinate (if break type: exit): ") # Y coord (1 2 3 4 5 6 7 8)
+    if Y1 == "exit":
+        print("amovagde while idan")
+        break
 
     X2 = input("Enter X2 coordinate (if break type: exit): ")
+    if X2 == "exit":
+        print("amovagde while idan")
+        break
+
     Y2 = input("Enter Y2 coordinate (if break type: exit): ")
-    
     if X1 == "exit" or X2 == "exit" or Y1 == "exit" or Y2 == "exit":
         print("amovagde while idan")
         break
-    
+
     if (int(X1) > 0 and int(X1) < 9) and (int(X2) > 0 and int(X2) < 9) and (int(Y1) > 0 and int(Y1) < 9) and (int(Y2) > 0 and int(Y2) < 9):
         print("kargi reinjia")
         # string symbols to ints
@@ -60,13 +70,8 @@ while True:
             print(f"YES, they have same colour, colour is {squareSecondcolour}")
         else:
             print(f"NO, they d't have same colour, first square colour is {squareFirstcolour} and second square colour is {squareSecondcolour}")
-            
-        
+
+
     else:
-        print("ragac geshleba")
-        break
-    
-
-
-
-
+        print("ragac geshleba - sheiyvane ricxvebi swor reinjshi")
+        continue
