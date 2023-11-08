@@ -1,4 +1,6 @@
 import random
+from ursina import *
+
 dasawyisi      = 0
 bolo           = 100
 chafiqrebuli   = random.randint(dasawyisi, bolo)
