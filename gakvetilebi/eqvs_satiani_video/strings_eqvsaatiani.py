@@ -28,3 +28,10 @@ Ninety degrees, I transcend,
 The stone of life.
 '''
 print(leqsi)
+
+
+txt = "Hello, welcome to my world."
+x = txt.find("welcome")
+print(x)
+print(type(x))
+print(txt[7])
