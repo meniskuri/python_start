@@ -17,6 +17,7 @@ print('''
 while True:
 
     k = 0
+
     for i in pacientebi:
         print("--------------------------------")
         print("k = ",k)
@@ -32,7 +33,6 @@ while True:
         else:
             print("No digit in that string")
 
-
         k = k + 1
         print("--------------------------------")
 
@@ -43,8 +43,8 @@ while True:
 
     if new_pacient == "" or new_pacient == "exit":
         break
-    elif not new_pacient.isdigit():
-        # pacientebi.append(new_pacient)
+    elif not new_pacient.isdigit() and not new_pacient in pacientebi:
+        pacientebi.append(new_pacient)
         print("==================================")
         print(pacientebi)
         print("==================================")
