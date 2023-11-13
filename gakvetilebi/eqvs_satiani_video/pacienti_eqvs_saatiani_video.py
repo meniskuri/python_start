@@ -1,6 +1,8 @@
 import re
+import time
 
 pacientebi = ["gio","gio1","gio2"]
+pacientebi_chek = ["erti"]
 print(pacientebi)
 print("pacientebi type = ",type(pacientebi))
 
@@ -26,14 +28,14 @@ while True:
         print("type(pacientebi[k]) = ",type(pacientebi[k]))
         print("pacientebi[k].isalpha() = ",pacientebi[k].isalpha())
 
-        m = re.search(r"\d", pacientebi[k])
-        if m:
-            print("Digit found at position", m.start())
-            print(type(m.start()))
-        else:
-            print("No digit in that string")
-
-        k = k + 1
+        #m = re.search(r"\d", pacientebi[k])
+        #if m:
+        #    print("Digit found at position", m.start())
+        #    print(type(m.start()))
+        #else:
+        #    print("No digit in that string")
+        #
+        #k = k + 1
         print("--------------------------------")
 
 
@@ -48,6 +50,29 @@ while True:
         print("==================================")
         print(pacientebi)
         print("==================================")
+    else:
+        print(".......................................")
+        pacientebi_chek[0] = new_pacient
+        print("pacientebi_chek = ",pacientebi_chek)
+        print(type(pacientebi_chek))
+        
+        while pacientebi_chek[0] in pacientebi:
+            m = re.search(r"\d", pacientebi_chek[0])
+            if m:
+                print("Digit found at position", m.start())
+                print(type(m.start()))
+            else:
+                print("No digit in that string")
+
+            k = k + 1
+
+            print("while shi var gachedili")
+            time.sleep(2)
+            pacientebi_chek[0] = pacientebi_chek[0] + str(1)
+            print("pacientebi_chek = ",pacientebi_chek)
+
+        print(".......................................")
+
 
 
 print("type of pacientebi[1] ", type(pacientebi[1]))

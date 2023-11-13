@@ -25,13 +25,8 @@ It is infinity,
 0, 1, 2, 3, 4, and 5,
 But also six, and even eight,
 Ninety degrees, I transcend,
-The stone of life.
+The stone of life
 '''
-print(leqsi)
-
-
-txt = "Hello, welcome to my world."
-x = txt.find("welcome")
-print(x)
-print(type(x))
-print(txt[7])
+x = leqsi.find("welcome")
+print(type(leqsi))
+print(leqsi[-30:])
