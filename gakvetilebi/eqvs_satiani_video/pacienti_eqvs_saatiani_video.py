@@ -35,7 +35,7 @@ while True:
         #else:
         #    print("No digit in that string")
         #
-        #k = k + 1
+        k = k + 1
         print("--------------------------------")
 
 
@@ -55,7 +55,7 @@ while True:
         pacientebi_chek[0] = new_pacient
         print("pacientebi_chek = ",pacientebi_chek)
         print(type(pacientebi_chek))
-        
+
         while pacientebi_chek[0] in pacientebi:
             m = re.search(r"\d", pacientebi_chek[0])
             if m:
@@ -64,12 +64,24 @@ while True:
             else:
                 print("No digit in that string")
 
-            k = k + 1
-
             print("while shi var gachedili")
             time.sleep(2)
-            pacientebi_chek[0] = pacientebi_chek[0] + str(1)
-            print("pacientebi_chek = ",pacientebi_chek)
+
+
+            x = "#".join(pacientebi_chek)
+            print("x = ", x)
+            print("x[:int(x[m.start()])+1] = ",x[:int(x[m.start()])+1])
+            print(int(x[m.start()])+1)
+            print(type(x[m.start()]))
+
+            print("000000000000000000000")
+            print(str(int(x[m.start()])+1))
+            print(type(str(int(x[m.start()])+1)))
+
+
+
+            #pacientebi_chek[0] = pacientebi_chek[0] + str(1)
+            #print("pacientebi_chek = ",pacientebi_chek)
 
         print(".......................................")
 

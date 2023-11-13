@@ -1,7 +1,7 @@
 import re
 
 
-myList = ["gio1"]
+myList = ["gio"]
 print(type(myList))
 
 
@@ -17,4 +17,5 @@ x = "#".join(myList)
 
 print(x)
 print(x[:3])
-print(type(x))
+print(int(x[m.start()])+1)
+print(type(x[m.start()]))
