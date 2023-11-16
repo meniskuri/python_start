@@ -50,3 +50,35 @@ while True:
         print("==================================")
         print(pacientebi)
         print("==================================")
+    else:
+        print(".......................................")
+        pacientebi_chek[0] = new_pacient
+        print("pacientebi_chek = ",pacientebi_chek)
+
+        while pacientebi_chek[0] in pacientebi:
+            m = re.search(r"\d", pacientebi_chek[0])
+            if m:
+                print("Digit found at position", m.start())
+                print(type(m.start()))
+            else:
+                print("No digit in that string")
+
+            print("while shi var gachedili")
+            time.sleep(2)
+
+
+            x = "#".join(pacientebi_chek)
+            print("x = ", x)
+            print("x[3] = ",x[int(m.start())])
+
+            print("000000000000000000000")
+            y = x.replace(x[int(m.start())], str(int(x[m.start()])+1))
+            print(" y = ",y)
+            print("000000000000000000000")
+
+
+            pacientebi_chek[0] = y
+            print("pacientebi_chek = ",pacientebi_chek)
+        pacientebi.append(pacientebi_chek[0])
+
+        print(".......................................")
