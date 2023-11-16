@@ -1,6 +1,15 @@
-txt = "gio1"
-print(txt[3])
+import re
+m = re.findall(r'\d+', "gio30")
+print(m)
+print(type(m))
 
-x = txt.replace(txt[3], "2")
-
-print(x)
+pacientebi_chek = ["erti"]
+pacientebi_chek[0] = "gio10"
+k = re.search(r"\d+", pacientebi_chek[0])
+if k:
+    print("Digit found at position", k.end())
+    print("Digit found at position", k.start())
+    print(type(k.end()))
+    
+else:
+    print("No digit in that string")

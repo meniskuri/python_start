@@ -69,7 +69,7 @@ while True:
 
             x = "#".join(pacientebi_chek)
             print("x = ", x)
-            print("x[3] = ",x[int(m.start())])
+            print("x[int(m.start())] = ",x[int(m.start())])
 
             print("000000000000000000000")
             y = x.replace(x[int(m.start())], str(int(x[m.start()])+1))
