@@ -54,29 +54,21 @@ while True:
 
         while pacientebi_chek[0] in pacientebi:
             m = re.search(r"\d", pacientebi_chek[0])
+
             if m:
                 print("m = ",m)
-                print("Digit found at position", m.start())
+                print("Digit found at end position", m.end())
+                print("Digit found at start position", m.start())
                 print(type(m.start()))
 
 
                 print("while shi var gachedili")
                 time.sleep(2)
 
-                x = "#".join(pacientebi_chek)
-                print("x = ", x)
-                print("x[int(m.start())] = ",x[int(m.start())])
-                print("000000000000000000000")
-                y = x.replace(x[int(m.start())], str(int(x[m.start()])+1))
-                print(" y = ",y)
-                print("000000000000000000000")
-                pacientebi_chek[0] = y
-                print("pacientebi_chek = ",pacientebi_chek)
 
             else:
                 print("No digit in that string",m)
-                #
-                pacientebi_chek[0] = new_pacient + "1"
+                #pacientebi_chek[0] = new_pacient + "1"
 
         pacientebi.append(pacientebi_chek[0])
 
