@@ -59,7 +59,27 @@ while True:
                 print("m = ",m)
                 print("Digit found at end position", m.end())
                 print("Digit found at start position", m.start())
+                print("pacientebi_chek[0] = ", pacientebi_chek[0])
                 print(type(m.start()))
+
+                x = "#".join(pacientebi_chek)
+                print("x = ", x)
+                print(type(x))
+
+                p = '[\d]+'
+                s = x
+
+                if re.search(p, s) is not None:
+                    for catch in re.finditer(p, s):
+                        print(int(catch[0]) + 1) # catch is a match object
+                        print(type(catch[0]))
+
+
+                print("x = ",x[:m.start()] + str(int(catch[0]) + 1))
+                y = x[:m.start()] + str(int(catch[0]) + 1)
+                print("y = ", y)
+
+                pacientebi_chek[0] = y
 
 
                 print("while shi var gachedili")
@@ -68,7 +88,7 @@ while True:
 
             else:
                 print("No digit in that string",m)
-                #pacientebi_chek[0] = new_pacient + "1"
+                pacientebi_chek[0] = new_pacient + "1"
 
         pacientebi.append(pacientebi_chek[0])
 
