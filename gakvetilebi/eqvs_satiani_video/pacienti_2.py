@@ -91,5 +91,6 @@ while True:
                 pacientebi_chek[0] = new_pacient + "1"
 
         pacientebi.append(pacientebi_chek[0])
+        print("pacientebi = ",pacientebi)
 
         print(".......................................")
