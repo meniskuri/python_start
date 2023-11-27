@@ -8,7 +8,7 @@ print('''xx
 
 
 
-numbers = [5,2,5,2,2]
+numbers = [5,2,7,22,2]
 i = 0
 for x in numbers:
     print("x" * int(numbers[i]))
@@ -21,5 +21,16 @@ for x in numbers:
     print(gamosavali)
 
 
-saxelebi = ["gio","vaso","levaniko","luka","teo","azo"]
-print(saxelebi[0])
+saxelebi = ["გიო","vaso","levaniko","luka","teo","azo"]
+გიოია = saxelebi[:3]
+print(გიოია)
+
+maqsimumi = numbers[0]
+i = 0
+for x in numbers:
+    if numbers[i] > maqsimumi:
+        maqsimumi = numbers[i]
+        print(i)
+    i = i + 1
+
+print(maqsimumi)
