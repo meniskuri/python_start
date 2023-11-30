@@ -5,8 +5,9 @@ gadamyvani = {
   "4":"otxi",
   }
 
-output = ""
 
 while True:
-    phone = input("Phone: ")
-    print(gadamyvani.get(phone))
+    phone = input("Phone (exit the program -> exit <-): ")
+    if phone == "" or phone == "exit":
+        break
+    print(gadamyvani.get(phone,"rame"))

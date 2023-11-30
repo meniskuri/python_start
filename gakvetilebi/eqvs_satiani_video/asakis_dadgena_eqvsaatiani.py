@@ -18,7 +18,7 @@ weli = get_current_year()
 # Print the result
 print("Current Year:", weli)
 
-saxeli           = input("input your name: ")
+chemisaxeli           = input("input your name: ")
 dabadebis_tarigi = int(input("dabadebis tarigi: "))
 asaki            = weli - dabadebis_tarigi
-print("saxelia: ",saxeli,"; dabadebis tarigia: ",dabadebis_tarigi,"; asaki: ",asaki)
+print("chemisaxelia: ",chemisaxeli,"; dabadebis tarigia: ",dabadebis_tarigi,"; asaki: ",asaki)
