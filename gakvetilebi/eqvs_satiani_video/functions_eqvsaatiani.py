@@ -1,8 +1,8 @@
 chemisaxeli = input("sheiyvanet momxmareblis chemisaxeli: ")
 
 
-def mivesalmot_momxmarebels(chemisaxeli):
-    print(f"gamarjoba momxmarebelo {chemisaxeli}")
+def mivesalmot_momxmarebels(saxeli):
+    print(f"gamarjoba momxmarebelo {saxeli}")
 
 mivesalmot_momxmarebels(chemisaxeli)
 

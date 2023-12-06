@@ -1,7 +1,8 @@
 # rogorc chans classebit obieqtebit da konstruqtorebit
-# momiwevs pythonzec snake is dawerac. grr... fuck 
+# momiwevs pythonzec snake is dawerac. grr... fuck
 
 class Point:
+    # konstruqtori
     def __init__(self,x,y):
         self.x = x
         self.y = y
